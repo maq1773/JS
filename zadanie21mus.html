@@ -1,0 +1,33 @@
+<html>
+        <head>
+
+        <title>
+            zadanie 21
+        </title>
+    
+
+    <head>
+       <body>
+   <script>
+       function ob()
+    {
+        var d1 =parseFloat(d.value);
+        var x1 =parseFloat(x.value);
+        var drabin= Math.sqrt((d1*d1)+(x1*x1));
+        var alfa= Math.round( Math.atan(d1/x1)*180/Math.PI*100)/100 ;
+        drabina.innerHTML+=drabin;
+        alf.innerHTML+=alfa;
+    }
+
+</script>
+   <form>
+   Obliczanie odległości od drabiny i kąta<br>
+   podaj D=<input type="number" id="d">  podaj X=<input type="number" id="x"><br>
+   <input type="button" onclick="ob()" value="oblicz">
+   <div id="drabina"> Drabina= </div>
+   <div id="alf"> Alfa= </div>
+
+   </form>
+
+   </body>
+    </html>
