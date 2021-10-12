@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+    <head>
+        <title>Kreator postaci RPG</title>
+        <link rel="stylesheet" href="rpg.css">
+    </head>
+    <body>
+        <div id="left"></div>
+        <div id="right">
+            <form>
+                <input type="text" value="" id="imie">
+                <select id="kla" onchange="klasy()">
+                    <option value="1">Wojownik</option>
+                    <option value="2">Rycerz</option>
+                    <option value="3">Mag</option>
+                    <option value="4">Łucznik</option>
+                    <option value="5">Asasyn</option>
+                    <option value="6">Bard</option>
+                    <option value="7">Paladyn</option>
+                    <option value="8">Tropiciel</option>
+                    <option value="9">Druid</option>
+                    <option value="10">Mnich</option>
+                </select>
+            </form>
+        </div>
+        <div id="mainl">
+            <p>HP <br>
+            Mana <br>
+            Siła <br>
+            Zwinność <br>
+            Inteligencja <br>
+            Złoto <br></p>
+        </div>
+        <div id="mainc">
+            <p id="b"></p>
+        </div>
+        <div id="mainr">
+            <p id="c"></p>
+        </div>
+
+        <script>
+            function klasa(hp,mana,str,ag,inte,gold)
+            {
+                this.hp = hp;
+                this.mana = mana;
+                this.str = str;
+                this.ag = ag;
+                this.inte = inte;
+                this.gold = gold;
+            }
+            var Wojownik = new klasa(20,4,15,13,4,13);
+            var Rycerz = new klasa(25,10,11,11,9,11);
+            var Mag = new klasa(5,20,2,4,15,10);
+            var Łucznik = new klasa(15,2,15,10,10,10);
+            var Asasyn = new klasa(12,7,1,15,15,100);
+            var Bard = new klasa(10,15,15,7,6,10);
+            var Paladyn = new klasa(20,10,5,20,10,10);
+            var Tropiciel = new klasa(20,0,20,20,20,10);
+            var Druid = new klasa(12,5,7,14,11,15);
+            var Mnich = new klasa(14,5,2,20,30,0);
+            
+            
+            
+            function bron(nazwa,cena,fiz,mag,wei)
+            {
+                this.nazwa = nazwa;
+                this.cena = cena;
+                this.fiz = fiz;
+                this.mag = mag;
+                this.wei = wei;
+            }
+            b1 = new bron("Morgenstern", 99999, 999, 999, 999);
+            b2 = new bron("Halberd", 10, 100, 60, 50);
+            b3 = new bron("Magic rifle", 1000, 250, 250, 0);
+            b4 = new bron("Demonic Bow", 5000, 200, 200,5);
+            b5 = new bron("Hidden blades", 0, 500, 0, 0.5,);
+            b6 = new bron("Bloody short sword", 6999, 150,50,2.5);
+            b7 = new bron("Metal longsword", 300, 200, 10, 50);
+            b8 = new bron("Long Sword", 1230, 120, 60, 3);
+            b9 = new bron("Druid hand canon", 500, 500,300,0);
+            b10 = new bron("Demon Scythe",9999, 500, 500,999);
+            
+            
+            
+            
+            
+            
+            function klasy(){
+                var a = document.getElementById("kla");
+                var c = a.value;
+                switch(c){
+                    case '1': b.innerHTML=Wojownik.hp+"<br>"+Wojownik.mana+"<br>"+Wojownik.str+"<br>"+Wojownik.ag+"<br>"+Wojownik.inte+"<br>"+Wojownik.gold; left.innerHTML="<img src=wojownik.png>"; 
+                    mainr.innerHTML="<p id='d'>"+b1.nazwa+"</p> <img src=bron1.png id='i'> <p id='e'>Cena: "+b1.cena+"<br>Obrażenia fizyczne: "+b1.fiz+"<br>Obrażenia magiczne: "+b1.mag+"<br>Waga: "+b1.wei+"</p>";
+                    break;
+                    case '2': b.innerHTML=Rycerz.hp+"<br>"+Rycerz.mana+"<br>"+Rycerz.str+"<br>"+Rycerz.ag+"<br>"+Rycerz.inte+"<br>"+Rycerz.gold; left.innerHTML="<img src=rycerz.jpg>"; 
+                    mainr.innerHTML="<p id='d'>"+b2.nazwa+"</p> <img src=bron2.png id='i'> <p id='e'>Cena: "+b2.cena+"<br>Obrażenia fizyczne: "+b2.fiz+"<br>Obrażenia magiczne: "+b2.mag+"<br>Waga: "+b2.wei+"</p>";
+                    break;
+                    case '3': b.innerHTML=Mag.hp+"<br>"+Mag.mana+"<br>"+Mag.str+"<br>"+Mag.ag+"<br>"+Mag.inte+"<br>"+Mag.gold; left.innerHTML="<img src=mage.jpg>";
+                    mainr.innerHTML="<p id='d'>"+b3.nazwa+"</p> <img src=bron3.png id='i'> <p id='e'>Cena: "+b3.cena+"<br>Obrażenia fizyczne: "+b3.fiz+"<br>Obrażenia magiczne: "+b3.mag+"<br>Waga:"+b3.wei+"</p>";
+                    break;
+                    case '4': b.innerHTML=Łucznik.hp+"<br>"+Łucznik.mana+"<br>"+Łucznik.str+"<br>"+Łucznik.ag+"<br>"+Łucznik.inte+"<br>"+Łucznik.gold; left.innerHTML="<img src=lucznik.jpg>"; 
+                    mainr.innerHTML="<p id='d'>"+b4.nazwa+"</p> <img src=bron4.png id='i'> <p id='e'>Cena: "+b4.cena+"<br>Obrażenia fizyczne: "+b4.fiz+"<br>Obrażenia magiczne: "+b4.mag+"<br>Waga: "+b4.wei+"</p>";
+                    break;
+                    case '5': b.innerHTML=Asasyn.hp+"<br>"+Asasyn.mana+"<br>"+Asasyn.str+"<br>"+Asasyn.ag+"<br>"+Asasyn.inte+"<br>"+Asasyn.gold; left.innerHTML="<img src=asasyn.jpg>"; 
+                    mainr.innerHTML="<p id='d'>"+b5.nazwa+"</p> <img src=bron5.png id='i'> <p id='e'>Cena: "+b5.cena+"<br>Obrażenia fizyczne: "+b5.fiz+"<br>Obrażenia magiczne: "+b5.mag+"<br>Waga: "+b5.wei+"</p>";
+                    break;
+                    case '6': b.innerHTML=Bard.hp+"<br>"+Bard.mana+"<br>"+Bard.str+"<br>"+Bard.ag+"<br>"+Bard.inte+"<br>"+Bard.gold; left.innerHTML="<img src=bard.jpg>";
+                    mainr.innerHTML="<p id='d'>"+b6.nazwa+"</p> <img src=bron6.png id='i'> <p id='e'>Cena: "+b6.cena+"<br>Obrażenia fizyczne: "+b6.fiz+"<br>Obrażenia magiczne: "+b6.mag+"<br>Waga: "+b6.wei+"</p>";
+                    break;
+                    case '7': b.innerHTML=Paladyn.hp+"<br>"+Paladyn.mana+"<br>"+Paladyn.str+"<br>"+Paladyn.ag+"<br>"+Paladyn.inte+"<br>"+Paladyn.gold; left.innerHTML="<img src=paladyn.jpg>"; 
+                    mainr.innerHTML="<p id='d'>"+b7.nazwa+"</p> <img src=bron7.png id='i'> <p id='e'>Cena: "+b7.cena+"<br>Obrażenia fizyczne: "+b7.fiz+"<br>Obrażenia magiczne: "+b7.mag+"<br>Waga: "+b7.wei+"</p>";
+                    break;
+                    case '8': b.innerHTML=Tropiciel.hp+"<br>"+Tropiciel.mana+"<br>"+Tropiciel.str+"<br>"+Tropiciel.ag+"<br>"+Tropiciel.inte+"<br>"+Tropiciel.gold; left.innerHTML="<img src=tropiciel.jpg>"; 
+                    mainr.innerHTML="<p id='d'>"+b8.nazwa+"</p> <img src=bron8.png id='i'> <p id='e'>Cena: "+b8.cena+"<br>Obrażenia fizyczne: "+b8.fiz+"<br>Obrażenia magiczne: "+b8.mag+"<br>Waga: "+b8.wei+"</p>";
+                    break;
+                    case '9': b.innerHTML=Druid.hp+"<br>"+Druid.mana+"<br>"+Druid.str+"<br>"+Druid.ag+"<br>"+Druid.inte+"<br>"+Druid.gold; left.innerHTML="<img src=druid.jpg>";
+                    mainr.innerHTML="<p id='d'>"+b9.nazwa+"</p> <img src=bron9.png id='i'> <p id='e'>Cena: "+b9.cena+"<br>Obrażenia fizyczne: "+b9.fiz+"<br>Obrażenia magiczne: "+b9.mag+"<br>Waga: "+b9.wei+"</p>";
+                    break;
+                    case '10': b.innerHTML=Mnich.hp+"<br>"+Mnich.mana+"<br>"+Mnich.str+"<br>"+Mnich.ag+"<br>"+Mnich.inte+"<br>"+Mnich.gold; left.innerHTML="<img src=mnich.jpg>"; 
+                    mainr.innerHTML="<p id='d'>"+b10.nazwa+"</p> <img src=bron10.png id='i'> <p id='e'>Cena: "+b10.cena+"<br>Obrażenia fizyczne: "+b10.fiz+"<br>Obrażenia magiczne: "+b10.mag+"<br>Waga: "+b10.wei+"</p>";
+                    break;
+                        default: b.innerHTML="Error"; 
+                }
+            }
+        </script>
+    </body>
+</html>

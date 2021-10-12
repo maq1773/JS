@@ -1,0 +1,18 @@
+body{margin: 0; overflow: hidden;}
+#mainr{width: 60%; height: 560px; background-color: rgb(238, 223, 12);  float: left;}
+#mainc{width: 20%; height: 560px; background-color: rgb(238, 223, 12); float: left;}
+#mainl{width: 20%; height: 560px; background-color: rgb(238, 223, 12); float: left; font-size: 30px;}
+#left{float: left; width: 15%; height: 400px; background-color:white;}
+#right{float: left;  width: 85%; height: 400px; background-color: rgb(238, 223, 12);}
+p{margin-left: 40px;line-height: 65px; padding-top: 60px;}
+#b{margin-left: 80px; font-size: 30px;}
+input
+{margin-left: 50px;}
+#c{
+    margin-left: 80px; font-size: 30px;}
+#d{
+    font-size: 30px; margin-top: -45px;}
+#i
+{margin-top: -35px; margin-left: 40px; float: left;}
+#e
+{font-size: 30px; margin-top: -75px; margin-left: 140px;}
