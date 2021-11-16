@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+    <head>
+        <title>Obiekty26-27</title>
+    </head>
+    <body>
+        <script type="text/javascript">
+            var samochod = {
+                marka: 'nissan',
+                model: 'micra',
+                przebieg: '10000',
+                pokaz_samochod: function()
+                {
+                    document.write("Samochod Marka: "+this.marka+" Model: "+this.model+" Przebieg: "+this.przebieg);
+                }
+            } 
+            samochod.pokaz_samochod();
+            samochod.datap='2010 rok';
+            samochod.wypisz=function(){document.write(" Rok produkcji: "+this.datap+"<br>");}
+            samochod.wypisz();
+            
+            var ciezarowka = {
+                moc: '430 KM',
+                skrzynia_biegow: 'automatyczna',
+                rodzaj_paliwa: 'Diesel',
+                pokaz_ciezarowke: function()
+                {
+                    document.write("Ciezarowka Moc: "+this.moc+" Skrzynia biegow: "+this.skrzynia_biegow+" Rodzaj paliwa: "+this.rodzaj_paliwa);
+                }
+            } 
+            ciezarowka.pokaz_ciezarowke();
+            ciezarowka.ladownosc='4 t';
+            ciezarowka.wypisz=function(){document.write(" Ładowność: "+this.ladownosc+"<br>");}
+            ciezarowka.wypisz();
+
+            var dom = {
+                powierzchnia: '66 mkw',
+                pokoje: '3',
+                cena: '560000 zł',
+                pokaz_dom: function()
+                {
+                    document.write("Dom Powierzchnia: "+this.powierzchnia+" Pokoje: "+this.pokoje+" Cena: "+this.cena);
+                }
+            }
+            dom.pokaz_dom();
+            dom.pieter='1';
+            dom.wypisz=function(){document.write(" Liczba pięter: "+this.pieter+"<br>");}
+            dom.wypisz();
+
+            var pudelko = {
+                kolor: 'czarny',
+                puste: 'nie',
+                otwarte: 'tak',
+                pokaz_pudelko: function()
+                {
+                    document.write("Pudelko Kolor: "+this.kolor+" Puste: "+this.puste+" Otwarte: "+this.otwarte);
+                }
+            }
+            pudelko.pokaz_pudelko();
+            pudelko.wielkosc='Duże';
+            pudelko.wypisz=function(){document.write(" Wielkość pudełka: "+this.wielkosc+"<br>");}
+            pudelko.wypisz();
+            
+            var wazon = {
+                wzor: 'kwiecisty',
+                rozmiar: 'mały',
+                material: 'szklany',
+                pokaz_wazon: function()
+                {
+                    document.write("Wazon Wzór: "+this.wzor+" Rozmiar: "+this.rozmiar+" Typ wazonu: "+this.material);
+                }
+            }
+            wazon.pokaz_wazon();
+            wazon.zawartosc='pusty';
+            wazon.wypisz=function(){document.write(" Zawartość: "+this.zawartosc+"<br>");}
+            wazon.wypisz();
+
+            var pociag = {
+                rodzaj_przewozow: 'towarowe',
+                trakcja: 'elektryczna',
+                wagony: '7',
+                pokaz_pociag: function()
+                {
+                    document.write("Pociag Rodzaj przewozów: "+this.rodzaj_przewozow+" Trakcja: "+this.trakcja+" Ilość wagonów: "+this.wagony);
+                }
+            }
+            pociag.pokaz_pociag();
+            pociag.m_p='250 km/h';
+            pociag.wypisz=function(){document.write(" Maksymalna prędkość: "+this.m_p+"<br>");}
+            pociag.wypisz();
+
+            var mebel = {
+                typ: 'stół',
+                z_czego_zrobione: 'Drewno dębowe',
+                wykonczenie: 'Lakier bezbarwny',
+                pokaz_mebel: function()
+                {
+                    document.write("Mebel Typ: "+this.typ+" Z czego zrobione: "+this.z_czego_zrobione+" Wykończenie: "+this.wykonczenie);
+                }
+            }
+            mebel.pokaz_mebel();
+            mebel.koszt='500 zł';
+            mebel.wypisz=function(){document.write(" Koszt: "+this.koszt+"<br>");}
+            mebel.wypisz();
+
+            var autobus = {
+                pojemnosc: '10.677',
+                miejsc_siedzacych: '59',
+                silnik: 'OM 470',
+                pokaz_autobus: function()
+                {
+                    document.write("Autobus Pojemność skokowa: "+this.pojemnosc+" Miejsc siedzących: "+this.miejsc_siedzacych+" Silnik: "+this.silnik);
+                }
+            }
+            autobus.pokaz_autobus();
+            autobus.skrzynia='6 stopniowa manualna';
+            autobus.wypisz=function(){document.write(" Skrzynia biegów: "+this.skrzynia+"<br>");}
+            autobus.wypisz();
+
+            var komputer = {
+                karta_graficzna: 'gtx 1080 Ti',
+                procesor: 'AMD Ryzen 5 3600',
+                ram: '16 GB',
+                pokaz_komputer: function()
+                {
+                    document.write("Komputer Karta graficzna: "+this.karta_graficzna+" Procesor: "+this.procesor+" Ram: "+this.ram);
+                }
+            }
+            komputer.pokaz_komputer();
+            komputer.dysk='256 GB NVME M.2';
+            komputer.wypisz=function(){document.write(" Dysk: "+this.dysk+"<br>");}
+            komputer.wypisz();
+
+            var monitor = {
+                natywna_rozdzielczosc: '1920x1080',
+                wielkosc_cal: '24"',
+                typ_matrycy: 'TN',
+                pokaz_monitor: function()
+                {
+                    document.write("Monitor Natywna rozdzielczość: "+this.natywna_rozdzielczosc+" Wielkość w calach: "+this.wielkosc_cal+" Typ matrycy: "+this.typ_matrycy);
+                }
+            }
+            monitor.pokaz_monitor();
+            monitor.czestotliwosco='120 hz';
+            monitor.wypisz=function(){document.write(" Częstotliwość odświeżania: "+this.czestotliwosco+"<br>");}
+            monitor.wypisz();
+
+            var router = {
+                porty_eth: '3',
+                porty_usb: '1',
+                pamiec_wew: '512 MB',
+                pokaz_router: function()
+                {
+                    document.write("Router Ilość portów ethernet: "+this.porty_eth+" Ilość portów USB: "+this.porty_usb+" Pamięć wewnętrzna: "+this.pamiec_wew);
+                }
+            }
+            router.pokaz_router();
+            router.standardy='IEEE 802.3, IEEE 802.3u';
+            router.wypisz=function(){document.write(" Standardy komunikacyjne: "+this.standardy+"<br>");}
+            router.wypisz();
+
+            var telefon = {
+                wielkosc_ekr: '7"',
+                czestotliwosc: '60 hz',
+                os: 'iOS 14',
+                pokaz_telefon: function()
+                {
+                    document.write("Telefon Wielkość ekranu: "+this.wielkosc_ekr+" Częstotliwość odświeżania ekranu: "+this.czestotliwosc+" OS: "+this.os);
+                }
+            }
+            telefon.pokaz_telefon();
+            telefon.p_m='64 GB';
+            telefon.wypisz=function(){document.write(" Pamięci masowej: "+this.p_m+"<br>");}
+            telefon.wypisz();
+
+            var spodnie = {
+                rodzaj: 'Dzwony',
+                dlugosc_nogawki: '80 cm',
+                glowny_material: 'bawełna',
+                pokaz_spodnie: function()
+                {
+                    document.write("Spodnie Rodzaj: "+this.rodzaj+" Długość nogawiki: "+this.dlugosc_nogawki+" Główny materiał: "+this.glowny_material);
+                }
+            }
+            spodnie.pokaz_spodnie();
+            spodnie.k='damskie';
+            spodnie.wypisz=function(){document.write(" Jakie: "+this.k+"<br>");}
+            spodnie.wypisz();
+
+            var owoc = {
+                typ_owocu: 'Jabłko',
+                kolor_owocu: 'Zielony',
+                swiezy: 'Tak',
+                pokaz_owoc: function()
+                {
+                    document.write("Owoc Typ owocu: "+this.typ_owocu+" Kolor owocu: "+this.kolor_owocu+" Świeży: "+this.swiezy);
+                }
+            }
+            owoc.pokaz_owoc();
+            owoc.c_kg='3 zł';
+            owoc.wypisz=function(){document.write(" Cena za kilogram: "+this.c_kg+"<br>");}
+            owoc.wypisz();
+
+            var wiezowiec = {
+                wysokosc: '237 m',
+                kondygnacje: '42',
+                pomieszczen: '3288',
+                pokaz_wiezowiec: function()
+                {
+                    document.write("Wieżowiec Wysokość: "+this.wysokosc+" Kondygnacje: "+this.kondygnacje+" Ilość pomieszczeń: "+this.pomieszczen);
+                }
+            }
+            wiezowiec.pokaz_wiezowiec();
+            wiezowiec.data='1955 rok';
+            wiezowiec.wypisz=function(){document.write(" Rok zakończenia budowy: "+this.data+"<br>");}
+            wiezowiec.wypisz();
+        </script>
+    </body>
+</html>
