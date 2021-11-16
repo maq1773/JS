@@ -1,0 +1,26 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+    </head>
+    <body>
+        <script> 
+            function pizza(wielkosc, rodzaj, sos, cena, z_ananasem)
+            {
+                this.wielkosc = wielkosc;
+                this.rodzaj = rodzaj;
+                this.sos = sos;
+                this.cena = cena;
+                this.z_ananasem = z_ananasem;
+            }
+            var  pizza1= new pizza('36','Neapolitana','Pomidorowy','24','Nie');
+                document.write("Wielkosc: "+pizza1.wielkosc+" cm rodzaj: "+pizza1.rodzaj+" sos: "+pizza1.sos+" cena: "+pizza1.cena+" zł z ananasem? "+pizza1.z_ananasem+"<br>");
+                var  pizza2= new pizza(40,"Sycylijska","Czosnkowy",26,"Nie");
+                document.write("Wielkosc: "+pizza2.wielkosc+" cm rodzaj: "+pizza2.rodzaj+" sos: "+pizza2.sos+" cena: "+pizza2.cena+" zł z ananasem? "+pizza2.z_ananasem+"<br>");
+                var  pizza3= new pizza(30,"Cztery sery","Pomidorowy",22,"Nie");
+                document.write("Wielkosc: "+pizza3.wielkosc+" cm rodzaj: "+pizza3.rodzaj+" sos: "+pizza3.sos+" cena: "+pizza3.cena+" zł z ananasem? "+pizza3.z_ananasem+"<br>");
+                var  pizza4= new pizza(38,"capricciosa","ziołowy",25,"Nie");
+                document.write("Wielkosc: "+pizza4.wielkosc+" cm rodzaj: "+pizza4.rodzaj+" sos: "+pizza4.sos+" cena: "+pizza4.cena+" zł z ananasem? "+pizza4.z_ananasem+"<br>");
+                var  pizza5= new pizza(24,"Hawajska","Chili",12,"Tak");
+                document.write("Wielkosc: "+pizza5.wielkosc+" cm rodzaj: "+pizza5.rodzaj+" sos: "+pizza5.sos+" cena: "+pizza5.cena+" zł z ananasem? "+pizza5.z_ananasem+"<br>");
+        </script>
+    </body>
