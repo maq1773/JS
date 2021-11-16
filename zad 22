@@ -1,0 +1,27 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+    </head>
+    <body>
+        <script>
+            function pod()
+            {
+                var a = parseFloat(odl.value);
+                var b = parseFloat(s.value);
+                var c = Math.round(Math.sqrt(b*b-a*a)*100)/100;
+                var alfa = Math.round(Math.asin(c/b)*180/Math.PI*100)/100;
+                
+                h.innerHTML+=alfa;
+
+            }
+
+        </script>
+        <form>
+        <input id="odl" type="number">
+        <input id="s" type="number">
+        <input type="button" onclick="pod()" value="Oblicz"> <br>
+        <div id=h></div>
+        <div id=alfa></div>
+        </form>
+    </body>
+</html>
