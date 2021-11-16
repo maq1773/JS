@@ -19,7 +19,7 @@
         <form>
         <input id="odl" type="number">
         <input id="s" type="number">
-        <input type="button" onclick="pod()" value="Oblicz"> <br>
+        <input type="button" onclick="pod()" value="Obliczz"> <br>
         <div id=h></div>
         <div id=alfa></div>
         </form>
