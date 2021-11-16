@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<head>
+    <title></title>
+    <style>
+        #a{margin-left: 20px; margin-right: 20px; margin-top: 15px;}
+        #b{margin-left: 20px; margin-right: 20px; margin-top: 15px;}
+        #d{margin-left: 20px; margin-right: 20px; margin-top: 15px;}
+    </style>
+</head>
+<body>
+    <form>
+        <center>
+        Cena:<br><input type="number" id="c"><br>
+        Ilość:<br><input type="number" id="i"><br>
+        
+            <input type="checkbox" id="a">
+            <input type="checkbox" id="b">
+            <input type="checkbox" id="d"><br>
+            <p>5%&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;10%&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;20%</p>
+            <input type="button" onclick="e()" value="Oblicz">
+        </center>
+    </form>
+
+
+
+
+    <script>
+        function e(){
+            var z = document.getElementById("a").checked;
+            var x = document.getElementById("b").checked;
+            var y = document.getElementById("d").checked;
+            var wynik = c.value*i.value;
+            if(z == true){wynik*=0.95}
+            if(x == true){wynik*=0.9}
+            if(y == true){wynik*=0.8}
+            alert(wynik);
+        }
+    </script>
+</body>
+</html>
